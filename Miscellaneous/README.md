@@ -2,4 +2,5 @@
 
 | Name              | Author | Difficulty |
 | :---------------- | :----: | :--------: |
-| toggle | hanz  |    Baby    |
+| toggle | hanz  |    Baby    |           |
+| Wordle | roxasz  |    Baby    |            
