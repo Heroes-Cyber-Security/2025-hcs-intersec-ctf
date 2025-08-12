@@ -4,4 +4,5 @@
 | :------------------- | :----: | :--------: |
 | Three Umazing Things |  Rev   |    Easy    |
 | My Networ(th)k       |  Rev   |    Easy    |
-| Example Challenge    | mirai  |    Baby    |
+| Blind File           |  Bim   |    Baby    |
+| Scramble Net         |  Bim   |    Medium  |
