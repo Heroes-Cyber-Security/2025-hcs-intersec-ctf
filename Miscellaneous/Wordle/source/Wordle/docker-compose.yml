@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  wordle:
+    build: .
+    ports:
+      - "10001:10001"
+      - "50032:50032"
+    environment:
+      - NODE_ENV=production
