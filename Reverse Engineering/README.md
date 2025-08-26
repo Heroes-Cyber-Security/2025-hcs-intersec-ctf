@@ -2,4 +2,4 @@
 
 | Name              | Author | Difficulty |
 | :---------------- | :----: | :--------: |
-| Example Challenge | mirai  |    Baby    |
+| SnakeV3 | 0xhonque  |    Medium    |
