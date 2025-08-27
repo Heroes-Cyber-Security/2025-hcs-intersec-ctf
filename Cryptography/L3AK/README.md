@@ -2,7 +2,7 @@
 
 ## Author
 
-Etern1ty
+etern1ty
 
 ## Difficulty
 
@@ -14,4 +14,6 @@ what is what?
 
 ## Flag
 
+```
 HCS{leak_l3ak_l34k_i_hate_leaks_65746572}
+```
