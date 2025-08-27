@@ -2,4 +2,5 @@
 
 | Name              | Author | Difficulty |
 | :---------------- | :----: | :--------: |
-| Example Challenge | mirai  |    Baby    |
+| L3AK | etern1ty  |    Easy    |
+| pad | etern1ty | Medium |
