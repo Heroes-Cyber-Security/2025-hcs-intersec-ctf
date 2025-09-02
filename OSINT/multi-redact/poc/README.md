@@ -1,7 +1,7 @@
 # Proof of Concept
 
 ## TL;DR
-1. Seach di X user bernama 'hermann de franz'
+1. Search di X user bernama 'hermann de franz'
 2. Ditemukan username @l0wk3ysh17_vr0, lihat apa saja yang telah dia post
 3. Kata 'community' pada salah satu postnya merefer ke komunitas reddit, dalam hal ini r/WplaceLive 
 4. Lihat profil u/l0wk3ysh17_vr0 di reddit dan cek postnya di r/WplaceLive
