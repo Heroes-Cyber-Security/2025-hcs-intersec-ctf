@@ -10,7 +10,7 @@ Easy
 
 ## Description
 
-my online friend, hermann de franz, posted something earlier this month. i wonder what it was.
+my friend, hermann de franz, said he was interested in doing a cool trend he saw online. i wonder what he's done.
 
 note: once you find it, dont break it!
 
