@@ -1,4 +1,4 @@
-# toggle
+# multi-redact
 
 ## Author
 
