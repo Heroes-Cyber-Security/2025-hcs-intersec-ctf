@@ -13,6 +13,7 @@ Baby
 kopag? kopsen lah.
 
 format: HCS{pluscode}
+
 example: HCS{4VCQC66M+CJ}
 
 ```
