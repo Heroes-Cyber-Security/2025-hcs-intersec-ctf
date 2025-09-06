@@ -9,7 +9,7 @@
 3. Reverse image search bangunan berikut, maka dapat diketahui pula bangunan tersebut adalah Wyndham Lynn Times yang berada di Phú Thọ, Vietnam.
 ![gedung](guessr3_2.png)
 
-4. Refer ke https://vi.wikipedia.org/wiki/%C4%90%C6%B0%E1%BB%9Dng_t%E1%BB%89nh_317 dan beberapa source lain, ĐT 317 adalah percabangan dari QL 32 yang merupakan national road Vietnam. Menurut https://thuvienphapluat.vn/van-ban/Tai-chinh-nha-nuoc/Quyet-dinh-541-QD-UBND-2021-xep-loai-duong-tinh-de-xac-dinh-gia-cuoc-van-tai-duong-bo-Phu-Tho-477079.aspx, ĐT 317 memiliki beberapa cabang lagi. Salah satu visualisasi jalur beserta jarak tempuhnya dari titik awal sampai ke Tu Vũ kurang lebih sebagai berikut.
+4. Refer ke https://vi.wikipedia.org/wiki/%C4%90%C6%B0%E1%BB%9Dng_t%E1%BB%89nh_317 dan beberapa source lain, ĐT 317 adalah percabangan dari QL 32 yang merupakan national road Vietnam. Menurut https://thuvienphapluat.vn/van-ban/Tai-chinh-nha-nuoc/Quyet-dinh-541-QD-UBND-2021-xep-loai-duong-tinh-de-xac-dinh-gia-cuoc-van-tai-duong-bo-Phu-Tho-477079.aspx, ĐT 317 memiliki beberapa cabang lagi. Visualisasi salah satu jalur beserta jarak tempuhnya dari titik awal sampai ke Tu Vũ kurang lebih sebagai berikut.
 ![jalur](guessr3_3.png)
 
 5. Setelah mendapat beberapa informasi tersebut, kita bisa mulai menebak lokasinya menggunakan logika. Mengingat jarak antara titik awal ĐT 317 dengan Tu Vũ adalah ±30 Km, kita bisa menebak-nebak angka yang tertulis samar-samar pada patok jalan dengan:
