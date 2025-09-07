@@ -2,12 +2,12 @@ import random                                                                   
 import sys
 
 def str_xor(secret, key):
-    new_key = key
-    i = 0
-    while len(new_key) < len(secret):
-        new_key = new_key + key[i]
-        i = (i + 1) % len(key)                                                                                                                                                                            ^ key                                                                                                                                                                                                                                                                                           
-    return "".join([chr(ord(secret_c) ^ ord(new_key_c)) for (secret_c,new_key_c) in zip(secret,new_key)])
+  new_key = key
+  i = 0
+  while len(new_key) < len(secret):
+    new_key = new_key + key[i]
+    i = (i + 1) % len(key)                                                                                                                                                                            ^ key                                                                                                                                                                                                                                                                                           
+  return "".join([chr(ord(secret_c) ^ ord(new_key_c)) for (secret_c,new_key_c) in zip(secret,new_key)])
 
 flag = "HCS{ini_flag_!aseli_~no_fek_fek_coba_aja_submit_xixixi}"
 
@@ -27,4 +27,4 @@ if flag = "":
   print(flag)
 else:
   flag = str_xor(flag_enc, 'progaming')                                                                                                                                                                                                                               sys.exit()
-  print('That is correct! Here\'s your flag: ' + flag)
+  print('"Kelazz king, nih flag: " ' + flag)
