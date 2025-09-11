@@ -1,7 +1,7 @@
 #!/bin/sh
 
 FLAG_INIT="HCS{Jail_j4il_j4il_nUsakamb4ngan!!!_[UUID]}"
-FLAG = "${FLAG_INIT//'[UUID]'/$FLAG}"
+FLAG=${FLAG_INIT//'[UUID]'/$FLAG}
 
 echo $FLAG > /app/flag.txt
 

