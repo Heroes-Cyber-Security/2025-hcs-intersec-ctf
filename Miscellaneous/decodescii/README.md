@@ -16,4 +16,4 @@ A new threat actor has recently been identified running amok in the depths of th
 nc <ip> 7003
 ```
 
-Flag Regex: `^HCS\{[a-zA-Z0-9_]{32}\}$`
+Flag Regex: `^HCS\{weird_4hhh_fl4gzz_ye_aw1kw0k_.*\}$`

@@ -1,8 +1,7 @@
 import random
 import base64
 import time
-import secrets
-import string
+import os
 
 CHALLENGE_TEMPLATE = r"""`TEMUKAN INPUT TERKECIL YANG MEMENUHI PROGRAM INI`
                                                                _^_        ____
@@ -179,7 +178,7 @@ if __name__ == "__main__":
     print()
     print(f"CONGRATS AGENT {assg},")
     print(f"YOU HAVE HELPED US CRACK THIS CASE.")
-    token = "".join(
-        secrets.choice(string.ascii_letters + string.digits + "_") for _ in range(32)
-    )
-    print(f"HERE'S YOUR PAYCHECK: HCS{{{token}}}")
+    username = os.environ.get('USERNAME')
+    with open(f"/home/{username}/flag.txt", "r") as f:
+        flag = f.read()
+    print(f"HERE'S YOUR PAYCHECK: {flag}")

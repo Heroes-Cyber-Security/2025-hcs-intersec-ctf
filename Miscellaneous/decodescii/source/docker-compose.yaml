@@ -1,0 +1,7 @@
+services:
+  app:
+    container_name: decodescii
+    build: .
+    ports:
+      - "7003:1337"
+    restart: always

@@ -1,7 +1,0 @@
-services:
-  decodescii:
-    build: .
-    restart: always
-    ports:
-      - "7003:1337"
-    container_name: decodescii
