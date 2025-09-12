@@ -1,6 +1,6 @@
 services:
   pad:
-    build: ./app
+    build: .
     restart: always
     ports:
       - "50005:1337"
