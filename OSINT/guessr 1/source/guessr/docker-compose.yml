@@ -1,0 +1,38 @@
+version: "3.8"
+services:
+  web:
+    build: .
+    ports:
+      - "6003:80"
+    secrets:
+      - flag1
+      - flag2
+      - flag3
+      - target1_lat
+      - target1_lng
+      - target2_lat
+      - target2_lng
+      - target3_lat
+      - target3_lng
+    environment:
+      ACCEPT_RADIUS_M: "100"
+
+secrets:
+  flag1:
+    file: ./secrets_aGNzaW50ZXJzZWMyNQ/flag1.txt
+  flag2:
+    file: ./secrets_aGNzaW50ZXJzZWMyNQ/flag2.txt
+  flag3:
+    file: ./secrets_aGNzaW50ZXJzZWMyNQ/flag3.txt
+  target1_lat:
+    file: ./secrets_aGNzaW50ZXJzZWMyNQ/target1_lat.txt
+  target1_lng:
+    file: ./secrets_aGNzaW50ZXJzZWMyNQ/target1_lng.txt
+  target2_lat:
+    file: ./secrets_aGNzaW50ZXJzZWMyNQ/target2_lat.txt
+  target2_lng:
+    file: ./secrets_aGNzaW50ZXJzZWMyNQ/target2_lng.txt
+  target3_lat:
+    file: ./secrets_aGNzaW50ZXJzZWMyNQ/target3_lat.txt
+  target3_lng:
+    file: ./secrets_aGNzaW50ZXJzZWMyNQ/target3_lng.txt
