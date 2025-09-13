@@ -38,7 +38,7 @@ class Challenge:
                 good = True
             except ValueError:
                 good = False
-            noisy = good ^ (rng.random() > 0.3)
+            noisy = good ^ (rng.random() > 0.2)
             return 1 if noisy else 0
         except Exception:
             return 0
