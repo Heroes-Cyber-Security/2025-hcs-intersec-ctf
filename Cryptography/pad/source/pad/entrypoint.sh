@@ -11,4 +11,4 @@ chmod 400 /home/ctf/flag.txt
 unset FLAG FLAG_INIT
 
 exec socat TCP-LISTEN:1337,reuseaddr,fork,nodelay,su=ctf \
-  "EXEC:'sh -lc \"cd /home/ctf && timeout 60 python3 chall.py\"'"
+  "EXEC:'sh -lc \"cd /home/ctf && timeout 600 python3 chall.py\"'"
