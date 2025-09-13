@@ -13,7 +13,7 @@ class Challenge:
         self.msg = urandom(16).hex()
         self.key = urandom(16)
         self.q = 0
-        self.L = 12000
+        self.L = 15000
 
     def inc(self):
         self.q += 1
