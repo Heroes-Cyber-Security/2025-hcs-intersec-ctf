@@ -2,7 +2,7 @@
 
 https://medium.com/@olyhossen10/breaking-aes-cbc-with-a-noisy-padding-oracle-48a82f570e98
 
-1. Each "Unpad" query returns `pad = 0` or `1`, but with noise—e.g., valid padding yields `pad = 0` about 70% of the time. We treat `pad = 0` as an indication of "valid padding".
+1. Each "Unpad" query returns `pad = 0` or `1`, but with noise—e.g., valid padding yields `pad = 0` about 80% of the time. We treat `pad = 0` as an indication of "valid padding".
 
 2. For each candidate ciphertext:
    - Query “Unpad” multiple times (e.g., 21).
