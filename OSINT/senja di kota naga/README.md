@@ -19,3 +19,7 @@ example: HCS{4VCQC66M+CJ}
 ```
 HCS{6PFVG4CM+VH}
 ```
+
+## Credit
+
+Raimuko
