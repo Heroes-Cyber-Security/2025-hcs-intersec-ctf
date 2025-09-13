@@ -17,3 +17,7 @@ format: HCS{current_location_fullname_city}
 ```
 HCS{taman_cerdas_pkk_edu_park_samarinda}
 ```
+
+## Credit
+
+Raimuko
