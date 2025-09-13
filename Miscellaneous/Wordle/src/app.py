@@ -1,32 +1,25 @@
 #!/usr/bin/env python3
 
-import requests
 import random
-import os
 import sys
 
-# Global list to hold words, populated at runtime.
 WORD_LIST = []
 
-# --- ANSI Colors ---
-GREEN = "\033[42m\033[30m"   # Black text on green background
-YELLOW = "\033[43m\033[30m"  # Black text on yellow background
-GRAY = "\033[47m\033[30m"    # Black text on white/gray background
+GREEN = "\033[42m\033[30m"
+YELLOW = "\033[43m\033[30m"
+GRAY = "\033[47m\033[30m"
 RESET = "\033[0m"
 
 def fetch_word_list():
-    """Fetches a list of 5-letter words from the API, assuming success."""
-    api_url = "https://random-word-api.vercel.app/api?words=200&length=5"
-    response = requests.get(api_url, timeout=5)
-    response.raise_for_status() # Will error out on 4xx/5xx status codes
-    WORD_LIST.extend(list(set(response.json())))
+    word_file_path = "words.txt"
+    with open(word_file_path, 'r') as f:
+        words = [line.strip() for line in f if line.strip()]
+        WORD_LIST.extend(words)
 
 def pick_word():
-    """Picks a random word from the globally loaded WORD_LIST."""
     return random.choice(WORD_LIST)
 
 def check_guess(secret, guess):
-    """Generates the colored output for the user's guess."""
     result = []
     secret_chars = list(secret)
     guess_chars = list(guess)
@@ -50,19 +43,22 @@ def check_guess(secret, guess):
     return "".join(result)
 
 def show_flag():
-    """Reads the flag directly from the expected file path."""
     flag_path = "/app/flag.txt"
-    with open(flag_path, 'r') as f:
-        flag = f.read().strip()
-    print(f"🎊 FLAG: {flag}")
+    try:
+        with open(flag_path, 'r') as f:
+            flag = f.read().strip()
+        print(f"🎊 FLAG: {flag}")
+    except:
+        print("Error: Could not read flag.")
 
 def wordle():
-    """Main game loop."""
-    secret = pick_word() # Will crash with IndexError if WORD_LIST is empty
+    sys.stdout.flush()
+    secret = pick_word()
     tries = 6
 
     print("\n=== WORDLE CLI CHALLENGE ===")
     print(f"Guess the {len(secret)}-letter word! You have {tries} tries.\n")
+    sys.stdout.flush()
 
     for attempt in range(1, tries + 1):
         try:
@@ -73,10 +69,12 @@ def wordle():
 
         if len(guess) != len(secret):
             print(f"❌ Word must be exactly {len(secret)} letters.\n")
+            sys.stdout.flush()
             continue
 
         result = check_guess(secret, guess)
         print(result + "\n")
+        sys.stdout.flush()
 
         if guess == secret:
             print("🎉 You guessed it! The word was:", secret.upper())
@@ -84,6 +82,7 @@ def wordle():
             return
 
     print("😢 Out of tries! The word was:", secret.upper())
+    sys.stdout.flush()
 
 if __name__ == "__main__":
     fetch_word_list()
