@@ -30,12 +30,6 @@ def menu_check(r, msg_ascii: str):
     return line.decode(errors="ignore").strip()
 
 def candidate_valid_majority(r, ct_hex):
-    """
-    Query the padding oracle up to MAX_SAMPLES times for the given ciphertext.
-    The challenge returns pad = 1 when (noisy result) is True, and 0 otherwise.
-    In the server, valid padding is flipped to False ~75% of the time, so we detect
-    validity by counting how many times we see pad == 0.
-    """
     false_count = 0
     total = 0
     needed = (MAX_SAMPLES // 2) + 1  # majority threshold
