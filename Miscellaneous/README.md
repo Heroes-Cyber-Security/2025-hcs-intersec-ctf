@@ -1,7 +1,8 @@
 # Miscellaneous
 
-| Name              | Author | Difficulty |
-| :---------------- | :----: | :--------: |
-| toggle | hanz  |    Baby    |           |
-| Wordle | roxasz  |    Baby    |
-| Hexahue Bergerak | erzyyyy | Easy |            
+| Name             | Author  | Difficulty |
+| :--------------- | :-----: | :--------: |
+| toggle           |  hanz   |    Baby    |
+| Wordle           | roxasz  |    Baby    |
+| Hexahue Bergerak | erzyyyy |    Easy    |
+| decodescii       |  kek.c  | Baby-Easy  |
