@@ -49,7 +49,7 @@ Answer: eee
 Hmm, doesn't seem to be a valid URL, Agent. Though, this is quite an interesting looking encoding, kinda reminds me of that... thing, back during COVID...
 ```
 
-If you ask a chatbot about it, might take a few tries, but Base45 was pretty well-known used for COVID certificates in the EU (e.g. here's me asking gemini abt it).
+If you ask a chatbot about it, might take a few tries, but Base45 was pretty well-known for being used in COVID certificates in the EU (e.g. here's me asking gemini abt it).
 
 ![alt text](image-1.png)
 
