@@ -6,7 +6,7 @@ takanami
 
 ## Difficulty
 
-Easy
+Medium
 
 ## Description
 
